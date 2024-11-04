@@ -1,7 +1,7 @@
 from polygon import RESTClient
 from polygon.rest import models
 
-client = RESTClient()
+client = RESTClient('90YFsduHTdpZdo8xQueZvu5EcSh0pcqI')
 
 aggs = client.get_aggs(
     "AAPL",
