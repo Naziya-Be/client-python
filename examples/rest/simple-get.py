@@ -1,13 +1,9 @@
 from polygon import RESTClient
-from polygon.rest import models
 
-client = RESTClient()
+api_key = "YOUR_API_KEY"
+client = RESTClient(api_key)
 
-aggs = client.get_aggs(
-    "AAPL",
-    1,
-    "day",
-    "2022-04-04",
-    "2022-04-04",
-)
-print(aggs)
+# Example API call to fetch a snapshot for a single stock
+snapshot = client.get_snapshot("stocks", "AAPL")
+print(snapshot)
+
